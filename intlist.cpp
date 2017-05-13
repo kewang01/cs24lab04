@@ -19,9 +19,9 @@ int IntList::sum() const {
 
 // returns true if value is in the list; false if not
 bool IntList::contains(int value) const {
-  bool is_in=true;
+  bool is_in=false;
   Node* p=first;
-  while(is_in=false && p!=NULL){
+  while(is_in==false && p!=NULL){
     if(p->info==value)
       is_in = true;
     p=p->next;
