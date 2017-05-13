@@ -14,12 +14,19 @@ int IntList::sum() const {
   for(p=first;p!=NULL;p=p->next){
     sum=sum+p->info;
   }
-  return sum; // REPLACE THIS NON-SOLUTION
+  return sum;
 }
 
 // returns true if value is in the list; false if not
 bool IntList::contains(int value) const {
-    return false; // REPLACE THIS NON-SOLUTION
+  bool is_in=true;
+  Node* p=first;
+  while(is_in=false && p!=NULL){
+    if(p->info==value)
+      is_in = true;
+    p=p->next;
+  }
+  return is_in;
 }
 
 // returns maximum value in list, or 0 if empty list
