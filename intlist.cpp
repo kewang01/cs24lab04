@@ -9,7 +9,12 @@ using std::cout;
 
 // return sum of values in list
 int IntList::sum() const {
-    return 0; // REPLACE THIS NON-SOLUTION
+  int sum=0;
+  Node* p;
+  for(p=first;p!=NULL;p=p->next){
+    sum=sum+p->info;
+  }
+  return sum; // REPLACE THIS NON-SOLUTION
 }
 
 // returns true if value is in the list; false if not
